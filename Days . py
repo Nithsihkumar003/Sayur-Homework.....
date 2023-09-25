@@ -1,0 +1,7 @@
+days_in_order = ("sunday","monday","tuesday","wednesday","thursday","friday","saturday")
+number = int(input("enter a number(1-7):"))
+if 1<= number <=7:
+    day = days_in_order[number-1] # for index value analyse
+    print(f"the days corresponding To   {number}  is   {day.capitalize()}") # capitalizing  the first word to be capital fro better view
+else:
+    print("invalid input enter the number between1 to 7")

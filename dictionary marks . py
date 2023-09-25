@@ -1,0 +1,12 @@
+num_of_subjects = int(input("Enter the number_of_subjects"))
+subject_marks = {}
+for i in range(num_of_subjects):
+    subject_code = input("Enter subject code")
+    marks = float(input(f"Enter marks for {subject_code}:"))
+    subject_marks[subject_code] = marks
+search_subject = input("enter the subject_code:")
+if search_subject in subject_marks:
+    marks = subject_marks[search_subject]
+    print(f"marks for{search_subject}:{marks} ")
+else:
+    print(f"subject_code{search_subject}is not found.")
