@@ -1,0 +1,7 @@
+num = int(input("enter a number that u need:"))
+initial = 1
+final = 20
+print("multiplication table for {num}:")
+for i in range(initial, final + 1  ):
+    solution = num * i
+    print(f"{num}*{i} = {solution}")
