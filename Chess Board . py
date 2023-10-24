@@ -1,0 +1,12 @@
+#chess board
+board_size = 8
+white_square = '\u25A0'
+black_square = ' '
+for row in range(board_size):
+    for column in range(board_size):
+        if (row + column) % 2 == 0:
+            print(white_square, end=' ')
+        else:
+            print(black_square, end=' ')
+    print()
+     
